@@ -1,3 +1,5 @@
+<!-- File: index.php Author: Jacob Meikle Website: Assignment2 File Desc: This is the entire single page desktop site. --> 
+
 <?php
 session_start();
 
@@ -21,7 +23,7 @@ if($_POST && empty($_SESSION['UserID']))
 	}
 	else
 	{
-		echo' <script type="text/javascript"> alert("Access Denied: username/password incorrect"); </script> ';	
+		$alert= ' <script type="text/javascript"> alert("Access Denied: username/password incorrect"); </script> ';	
 	}
 	
 }
@@ -36,8 +38,9 @@ if($_SESSION['UserID'])
 else
 {
 	//display login screen
-	echo
+	$loginHtml =
 	'
+	<div id="loginBox">
 	<form action="'.$_SERVER['PHP_SELF'].'" method="post" name="surveyForm">
 	<label for="username">Username</label>
 	<input type="textbox" name="username" />
@@ -47,7 +50,29 @@ else
 	<br/>
 	<input type="submit" value="Login" />
 	</form>
+	</div>
 	';
 	
 }
 ?>
+
+<!doctype html>
+<html class="no-js" lang="en">
+  	<head>
+	    <meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	    <title>Jacob Meikle | Portfolio</title>
+	    <link rel="stylesheet" href="css/foundation.css" />
+	    <link rel="stylesheet" href="css/custom.css" />
+	    <script src="js/jquery.js"></script>    
+	    <!-- custom fonts -->
+	    <link href='http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
+  	</head>
+ 	<body>
+ 		<?php 
+ 		echo $alert;
+ 		echo $loginHtml; 	
+ 		?>
+	</body>
+</html>
+
