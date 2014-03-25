@@ -70,7 +70,7 @@
     
     <div class="row">
     	<img id="bannerImg" src="img/logo.png"	alt="Jacob Meikle's logo"/> 
-	    <div class="large-11 columns text-center" >
+	    <div class="large-11 columns text-center " >
 	    		<h1> Jacob Meikle's Portfolio</h1> 		
 	    </div>
     </div>

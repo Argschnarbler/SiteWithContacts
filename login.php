@@ -40,10 +40,12 @@ else
 	//display login screen
 	$loginHtml =
 	'
-	<div id="loginBox">
+	<br/>
+	<div class="row">
+	<div id="loginBox" class="large-6 large-offset-1  medium-8 medium-offset-1  small-10  small-offset-1 columns">
 	<form action="'.$_SERVER['PHP_SELF'].'" method="post" name="surveyForm">
 	<label for="username">Username</label>
-	<input type="textbox" name="username" />
+	<input type="text" name="username" />
 	<br/>
 	<label for="pass">Password</label>
 	<input type="password" name="pass" />
@@ -51,9 +53,15 @@ else
 	<input type="submit" value="Login" />
 	</form>
 	</div>
+	
+	</div>
+
 	';
 	
 }
+
+	//close db connection
+	$db->close();
 ?>
 
 <!doctype html>
@@ -69,9 +77,9 @@ else
 	    <link href='http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
   	</head>
  	<body>
- 		<?php 
- 		echo $alert;
+ 		<?php 	
  		echo $loginHtml; 	
+ 		echo $alert;
  		?>
 	</body>
 </html>
