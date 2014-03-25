@@ -11,6 +11,10 @@ body, a, h1, h2, h3, h4, h5, h6{
 		font-family: 'Love Ya Like A Sister', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif, cursive;
 }
 
+table{
+	width: 100%;
+	text-align:center;
+}
 
 #resume{
 	max-height: 500px;

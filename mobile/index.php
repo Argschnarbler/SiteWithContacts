@@ -39,6 +39,7 @@ $_SESSION['visit'] = "done";
 	      <li><a href="#home" class="ui-btn-active ui-state-persist" data-theme="c" data-icon="home">Home</a></li>
 	      <li><a href="#aboutme"data-theme="c" data-icon="grid">About Me</a></li>
 	      <li><a href="#contact"data-theme="c" data-icon="info">Contact</a></li>
+	      <li><a href="../mycontacts.php"data-theme="c" data-icon="info">My Contacts</a></li>
 	    </ul>
 	  </div>
 	  

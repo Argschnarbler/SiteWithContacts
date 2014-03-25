@@ -61,6 +61,9 @@
     	 	<dd>
     	 		<a href="https://github.com/Argschnarbler">Git Hub</a>
     	 	</dd> 
+    	 	<dd>
+    	 		<a href="mycontacts.php">My Contacts</a>
+    	 	</dd> 
     	 </dl> 
     </nav>
     

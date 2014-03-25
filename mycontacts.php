@@ -1,5 +1,7 @@
+<!-- File: mycontacts.php Author: Jacob Meikle Website: Assignment3 File Desc: This page shows contacts --> 
 <?php
 	session_start();
+	$_SESSION['visit'] = "";
 	if(!$_SESSION['UserID'])
 	{
 		header('Location: login.php');
@@ -36,7 +38,6 @@
 ?>
 
 <!doctype html>
-<!-- File: index.php Author: Jacob Meikle Website: Assignment2 File Desc: This is the entire single page desktop site. --> 
 <html class="no-js" lang="en">
   	<head>
 	    <meta charset="utf-8" />
@@ -50,11 +51,21 @@
   	</head>
  	<body>
  		
- 		<div class="row">
- 			<a href="logout.php"> Logout </a>
- 			<h1> My Contacts</h1> 		
- 			
+ 		<!-- Nav -->
+	    <nav  data-magellan-expedition="fixed">
+	    	 <dl class="sub-nav"> 
+	    	 	<dd data-magellan-arrival="Back">
+	    	 		<a href="index.php">Back to Site</a>
+	    	 	</dd> 
+	    	 </dl> 
+	    </nav>
+  	
+ 		<!-- content -->
+ 		<div class="row">		
 			<div id="loginBox" class="large-6 large-offset-1  medium-8 medium-offset-1  small-10  small-offset-1 columns">
+				<a href="logout.php"> Logout </a>
+				<br/>
+ 				<h2> My Contacts</h2> 	
 				<?php  echo $contactHTML; ?>
 				
 			</div>

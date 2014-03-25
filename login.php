@@ -1,4 +1,4 @@
-<!-- File: index.php Author: Jacob Meikle Website: Assignment2 File Desc: This is the entire single page desktop site. --> 
+<!-- File: login.php Author: Jacob Meikle Website: Assignment3 File Desc: This page allows the user to log in --> 
 
 <?php
 session_start();
